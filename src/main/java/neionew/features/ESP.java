@@ -98,7 +98,7 @@ public class ESP {
     private static void handleEntity(LivingEntity entity, Color colorr) {
         Color color;
         if (entity instanceof Turtle || entity instanceof ArmorStand stand && safeName(stand).contains("Shellwise")) color = Color.green;
-        else if (entity instanceOf Hoglin) color = Color.pink else color = colorr;
+        else if (entity instanceof Armadillo) color = Color.pink else color = colorr;
 
         if (entity instanceof ArmorStand) {
             entity.setCustomNameVisible(false);
