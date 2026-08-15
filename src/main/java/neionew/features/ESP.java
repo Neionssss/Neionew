@@ -76,7 +76,7 @@ public class ESP {
                 default -> false;
             };
             boolean turtleOk = Config.turtleESP() && !shouldIgnore;
-            boolean match = ((li instanceof Turtle || safeName(li).contains("Shellwise")) && turtleOk && LocationChecker.isInMGM()) || (Config.hoglinESP() && li instanceof Hoglin && LocationChecker.isInTC());
+            boolean match = ((li instanceof Turtle || safeName(li).contains("Shellwise")) && turtleOk && LocationChecker.isInMGM()) || (Config.hoglinESP() && li instanceof Hoglin hg && hg.isBaby() && LocationChecker.isInTC());
             Color color = null;
 
             if (Config.middleClickESP() && !Neionew.entityColors.isEmpty()) {
