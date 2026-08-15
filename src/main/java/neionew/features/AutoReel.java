@@ -21,7 +21,7 @@ public class AutoReel {
         boolean canUse = false;
 
         for (Entity e : mc.level.entitiesForRendering()) {
-            if (!(e instanceof ArmorStand as) || as.distanceTo(mc.player) > 6) continue;
+            if (!(e instanceof ArmorStand as) || as.distanceTo(mc.player) > 12) continue;
             if (Objects.equals(safeName(as), "REEL")) {
                 canUse = true;
                 break;
